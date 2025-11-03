@@ -1,0 +1,115 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ambiente Virtual
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Gravações e Vídeos
+recordings/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Modelos YOLO/PyTorch (normalmente grandes - descomente se não quiser versionar)
+# models/*.pt
+# models/*.pth
+# models/*.onnx
+# models/*.weights
+
+# Arquivos de Configuração Locais/Sensíveis
+config/last_settings.yaml
+config/local_*.yaml
+*.local.yaml
+
+# PDFs Gerados
+*.pdf
+!README.pdf
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*~
+*.orig
+
+# IDE e Editores
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.cursor/
+
+# Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Backup
+backup_versao_estavel_*/
+*_backup.*
+backup/
+*.backup
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Profiling
+*.prof
+*.lprof
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Arquivos de lock específicos (manter apenas requirements.txt)
+# Pipfile.lock
+# poetry.lock

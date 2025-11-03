@@ -1,0 +1,54 @@
+# Configuração de teste com modelos Ultralytics padrão
+# Use esta config se não tiver modelos treinados próprios
+
+camera:
+  fps_target: 60
+  pixel_format: Mono8
+  width: 1280
+  height: 720
+  exposure_time: 5000
+  gain: 0
+  timeout_ms: 50
+
+inference:
+  imgsz: 640
+  max_det: 100
+  device: cuda:0
+  conf_threshold: 0.5
+  iou_threshold: 0.45
+
+# Modelos de teste (serão baixados automaticamente)
+models:
+  seg: yolov8n-seg.pt      # Modelo de segmentação pequeno
+  smudge: yolov8n.pt       # Modelo de detecção pequeno
+  simbolos: yolov8n.pt     # Modelo de detecção pequeno
+  blackdot: yolov8n.pt     # Modelo de detecção pequeno
+  simbolos_yaml: ""        # Vazio para usar classes padrão COCO
+
+roi:
+  conf: 0.3                # Mais baixo para teste
+  iou: 0.45
+  min_pixels: 1000         # Menor para teste
+
+thresholds:
+  smudge_conf: 0.3         # Valores baixos para teste
+  smudge_iou: 0.45
+  simbolo_conf: 0.3
+  simbolo_iou: 0.45
+  blackdot_conf: 0.3
+  blackdot_iou: 0.45
+
+transfer:
+  absent_to_new: 8
+  iou_new_thresh: 0.30
+
+display:
+  target_width: 1280
+  target_height: 720
+  window_title: "YOLO Detection System - TESTE (Modelos Padrão)"
+
+recording:
+  codec: mp4v
+  fps: 30
+  output_dir: recordings
+

@@ -1,0 +1,9 @@
+# Diretório para modelos YOLO
+
+Coloque seus modelos treinados aqui:
+- seg.pt (modelo de segmentação ROI)
+- smudge.pt (detector de smudge)
+- simbolos.pt (detector de símbolos)
+- blackdot.pt (detector de blackdot)
+- data_simbolos.yaml (configuração de classes, opcional)
+

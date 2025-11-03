@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 8
+names: ['FIFA_NO', 'FIFA_OK', 'R_NO', 'R_OK', 'Simbolo_NO', 'Simbolo_OK', 'String_NO', 'String_OK']
+
+roboflow:
+  workspace: ricahaus
+  project: fifa_r_simbo_string-istae
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ricahaus/fifa_r_simbo_string-istae/dataset/1

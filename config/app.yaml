@@ -1,0 +1,68 @@
+camera:
+  fps_target: 4
+  pixel_format: BayerRG8
+  width: 1280
+  height: 720
+  exposure_time: 7600
+  gain: 6.336633663366336
+  timeout_ms: 50
+  balance_white_auto: Continuous
+inference:
+  imgsz: 512
+  max_det: 50
+  device: cuda
+  conf_threshold: 0.5
+  iou_threshold: 0.45
+models:
+  seg: models/Crop_Fifa_best.pt
+  smudge: models/best_smudge.pt
+  simbolos: models/best.pt
+  blackdot: models/best_blackdot.pt
+roi:
+  conf: 0.22155688622754488
+  iou: 0.45
+  min_pixels: 2000
+thresholds:
+  smudge_conf: 0.7874251497005988
+  smudge_iou: 0.45
+  simbolo_conf: 0.02065868263473054
+  simbolo_iou: 0.45
+  blackdot_conf: 0.0
+  blackdot_iou: 0.45
+transfer:
+  absent_to_new: 8
+  iou_new_thresh: 0.3
+display:
+  target_width: 1280
+  target_height: 720
+  window_title: YOLO Detection System - Basler USB3 Vision
+recording:
+  codec: mp4v
+  fps: 30
+  output_dir: recordings
+ui_controls:
+  camera:
+    fps: 60
+    exposure: 9250
+    gain: 7.287128712871287
+    balance: Continuous
+    resolution: 1920x1080 (Full HD)
+  thresholds:
+    smudge: 0.9016467065868263
+    simbolos: 0.5020958083832335
+    blackdot: 0.24505988023952097
+  models:
+    seg: true
+    smudge: true
+    simbolos: true
+    blackdot: true
+  focus:
+    focus: 66
+    auto_focus: true
+camera_auto:
+  auto_exposure: true
+  auto_gain: true
+persistence:
+  save_on_exit: true
+  restore_on_startup: true
+  settings_file: config/last_settings.yaml
